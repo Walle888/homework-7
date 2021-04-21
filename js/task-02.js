@@ -11,7 +11,8 @@ let ulList = document.getElementById("ingredients");
 const ingredientsFood = ingredients.map(ingredient => {
   let items = document.createElement("li");
  items.textContent = ingredient;  
-    console.log(items);
+  console.log(items);
+  return items;
 });
 ulList.append(...ingredientsFood);
 
